@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  post 'clientes/:client_id/transacoes' => 'transactions#create'
+  get 'clientes/:client_id/extrato' => 'bank_statements#show'
 end

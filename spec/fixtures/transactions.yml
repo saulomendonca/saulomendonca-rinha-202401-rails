@@ -1,0 +1,87 @@
+one:
+  id: 1
+  amount: 100_00
+  transaction_type: c
+  description: AAA1
+  client_id: 2
+  transaction_date: 2022-01-01 10:00:00.000000000 +0000
+
+two:
+  id: 2
+  amount: 100_00
+  transaction_type: d
+  description: AAA2
+  client_id: 2
+  transaction_date: 2022-01-02 10:00:00.000000000 +0000
+
+three:
+  id: 3
+  amount: 550_00
+  transaction_type: c
+  description: AAA3
+  client_id: 2
+  transaction_date: 2022-01-03 10:00:00.000000000 +0000
+
+four:
+  id: 4
+  amount: 550_00
+  transaction_type: c
+  description: AAA4
+  client_id: 2
+  transaction_date: 2022-01-04 10:00:00.000000000 +0000
+
+five:
+  id: 5
+  amount: 550_00
+  transaction_type: d
+  description: AAA5
+  client_id: 2
+  transaction_date: 2022-01-05 10:00:00.000000000 +0000
+
+six:
+  id: 6
+  amount: 550_00
+  transaction_type: d
+  description: AAA6
+  client_id: 2
+  transaction_date: 2022-01-06 10:00:00.000000000 +0000
+
+seven:
+  id: 7
+  amount: 330_000
+  transaction_type: c
+  description: AAA7
+  client_id: 2
+  transaction_date: 2022-01-07 10:00:00.000000000 +0000
+
+eight:
+  id: 8
+  amount: 330_00
+  transaction_type: d
+  description: AAA8
+  client_id: 2
+  transaction_date: 2022-01-08 10:00:00.000000000 +0000
+
+nine:
+  id: 9
+  amount: 2_000_00
+  transaction_type: c
+  description: AAA9
+  client_id: 2
+  transaction_date: 2022-01-09 10:00:00.000000000 +0000
+
+ten:
+  id: 10
+  amount: 600_00
+  transaction_type: c
+  description: AAA10
+  client_id: 2
+  transaction_date: 2022-01-10 10:00:00.000000000 +0000
+
+eleven:
+  id: 11
+  amount: 400_00
+  transaction_type: c
+  description: AAA11
+  client_id: 2
+  transaction_date: 2021-12-11 10:00:00.000000000 +0000

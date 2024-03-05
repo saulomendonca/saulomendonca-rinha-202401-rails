@@ -1,0 +1,11 @@
+one:
+  id: 1
+  name: Marko
+  account_limit: 1_000_00
+  account_balance: 0
+
+two:
+  id: 2
+  name: Jana
+  account_limit: 2_000_00
+  account_balance: 3_000_00

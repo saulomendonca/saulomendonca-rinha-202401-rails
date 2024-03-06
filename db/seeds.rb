@@ -6,11 +6,11 @@
 #
 
 [
-    { name:'o barato sai caro', account_limit: 1_000_00 },
-    { name:'zan corp ltda', account_limit: 800_00 },
-    { name:'les cruders', account_limit: 10_000_00 },
-    { name:'padaria joia de cocaia', account_limit: 100_000_00 },
-    { name:'kid mais', account_limit: 5_000_00 }
+  { id: 1, name: 'o barato sai caro', account_limit: 1_000_00 },
+  { id: 2, name: 'zan corp ltda', account_limit: 800_00 },
+  { id: 3, name: 'les cruders', account_limit: 10_000_00 },
+  { id: 4, name: 'padaria joia de cocaia', account_limit: 100_000_00 },
+  { id: 5, name: 'kid mais', account_limit: 5_000_00 }
 ].each do |client|
-  Client.create!(client)
+  Client.upsert(client, unique_by: :id)
 end

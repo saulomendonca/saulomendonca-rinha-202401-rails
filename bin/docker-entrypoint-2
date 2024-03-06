@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sleep 5
+# only reset the db on the first instance
+exec "${@}"

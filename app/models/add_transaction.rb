@@ -9,8 +9,11 @@ class AddTransaction
   end
 
   def call
+    return %i[failure invalid_transaction] unless valid?
+
     client = Client.find_by(id: client_id)
     return %i[failure client_not_found] if client.nil?
+
     has_limit = transaction_type == 'd' && amount > client.account_balance + client.account_limit
     return %i[failure invalid_transaction] if has_limit
 
@@ -25,6 +28,14 @@ class AddTransaction
     rescue StandardError
       %i[failure invalid_transaction]
     end
+  end
+
+  def valid?
+    return unless @amount.kind_of?(Integer) && @amount > 0
+    return unless %w[c d].include? @transaction_type
+    return if @description.nil? || !@description.size.between?(1,10)
+
+    true
   end
 
   def update_client_balance

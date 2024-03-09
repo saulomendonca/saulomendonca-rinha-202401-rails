@@ -9,8 +9,10 @@ class AddTransaction
   end
 
   def call
-    client = Client.where(id: client_id).select(:id).take
+    client = Client.find_by(id: client_id)
     return %i[failure client_not_found] if client.nil?
+    has_limit = transaction_type == 'd' && amount > client.account_balance + client.account_limit
+    return %i[failure invalid_transaction] if has_limit
 
     begin
       Client.transaction do
